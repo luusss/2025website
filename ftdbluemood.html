@@ -1,49 +1,110 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FTD Blue Mood</title>
-  <link rel="stylesheet" href="text/ftdbluemood.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTDBLUEMOOD</title>
+  <link rel="stylesheet" href="ftdbluemood.css" />
 </head>
+
 <body>
-  <header id="masthead">
-    <h1>FTD Blue Mood</h1>
-    <nav id="nav">
-      <ul>
-        <li><a href="#">首頁</a></li>
-        <li><a href="#">關於我們</a></li>
-        <li><a href="#">服務項目</a></li>
-        <li><a href="#">聯絡方式</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- 頂部區域（在白框外） -->
+  <div class="top-header">
+    <h1>FTDBLUEMOOD</h1>
+    <p>SMALL COMPANY SLOGAN GOES HERE</p>
+  </div>
+  <div class="wrapper">
+    <header>
+      <img src="images/header2.jpg" alt="Banner" class="banner" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main id="mainContent">
-    <section id="content">
-      <h2>我們的理念</h2>
-      <p>「Blue Mood」象徵冷靜與專業，我們專注於網站設計、品牌形象與互動體驗的創造。無論是企業網站或個人作品集，我們都能以最純粹的藍調，呈現最有溫度的視覺感受。</p>
-
-      <h2>最新專案</h2>
-      <ul id="port">
-        <li><img src="https://via.placeholder.com/150x100" alt="專案一"></li>
-        <li><img src="https://via.placeholder.com/150x100" alt="專案二"></li>
-        <li><img src="https://via.placeholder.com/150x100" alt="專案三"></li>
-      </ul>
+    <section class="top-boxes">
+      <div class="box">
+        <h2>Your Options</h2>
+        <img src="images/img1.png" alt="">
+        <p>Cras hendrerit est nec libero ornare gravida. Donec interdum dignissim risus et vestibulum.</p>
+      </div>
+      <div class="box">
+        <h2>Company News</h2>
+        <img src="images/img2.png" alt="">
+        <p>Donec eget nisl id magna tempor laoreet. Etiam egestas.</p>
+      </div>
+      <div class="box">
+        <h2>Have a Question?</h2>
+        <img src="images/img3.png" alt="">
+        <p>Cras hendrerit est nec libero ornare gravida.</p>
+      </div>
     </section>
 
-    <aside id="sidebar">
-      <h2>最新消息</h2>
-      <ul id="link-list">
-        <li><a href="#">2025/10/01 - 新版網站上線！</a></li>
-        <li><a href="#">2025/09/15 - 新增互動展示專區</a></li>
-        <li><a href="#">2025/08/30 - 客戶專屬登入系統開發中</a></li>
-      </ul>
-    </aside>
-  </main>
+    <section class="content">
+      <div class="left">
+        <div class="section blue">
+          <h3>Etiam felis ipsum</h3>
+          <div class="profiles">
+            <img src="images/img1.jpg" alt="">
+            <p>Cras hendrerit est nec libero ornare gravida.</p>
+            <img src="images/img2.jpg" alt="">
+            <p>Cras hendrerit est nec libero ornare gravida.</p>
+            <img src="images/img3.jpg" alt="">
+            <p>Cras hendrerit est nec libero ornare gravida.</p>
+            <img src="images/img4.jpg" alt="">
+            <p>Cras hendrerit est nec libero ornare gravida.</p>
+          </div>
+        </div>
 
-  <footer id="footer">
-    <p>&copy; 2025 FTD Blue Mood Studio | 網站設計．品牌形象．數位創意</p>
-  </footer>
+        <div class="section">
+          <h3>Nullam consectetur</h3>
+          <p>
+            Phasellus porta. Fusce suscipit varius mi. Nulla facilisi. Aenean nec eros.
+            Vestibulum ante ipsum primis in faucibus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="section">
+          <h3>Duis blandit ultrices</h3>
+          <ul>
+            <li>Donec tincidunt purus vitae</li>
+            <li>Donec non egestas lectus lacus</li>
+            <li>Cras porttitor hendrerit laoreet</li>
+            <li>Quisque malesuada odio</li>
+            <li>Quisque malesuada odio</li>
+            <li>Cras porttitor hendrerit laoreet</li>
+            <li>Quisque malesuada odio</li> 
+            <li>Quisque malesuada odio</li>
+            <li>Quisque malesuada odio</li>
+            <li>Quisque malesuada odio</li>
+          </ul>
+          <a href="#">Read More</a>
+        </div>
+
+        <div class="section blue">
+          <h3>In semper massa</h3>
+          <img src="images/img5.jpg" alt="">
+          <p>Praesent vestibulum molestie lacus. Aenean cum sociis natoque penatibus et magnis dis parturient montes.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Copyright © 2011. Designed by Free Web Templates, coded by Free Flash Templates.<br>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">HTML</a> | <a href="#">CSS</a>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
