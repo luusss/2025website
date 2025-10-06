@@ -1,0 +1,164 @@
+/* FTD Blue Mood 主題設計 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", Helvetica, sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #cce0ff, #e6f0ff);
+    color: #333;
+  }
+  
+  /* 頁首 */
+  #masthead {
+    background-color: #005b99;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #masthead h1 {
+    font-size: 1.8em;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  /* 導覽列 */
+  #nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  #nav li {
+    margin-left: 20px;
+  }
+  
+  #nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  #nav a:hover {
+    color: #cce0ff;
+  }
+  
+  /* 主內容區 */
+  #mainContent {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  #content {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  #content h2 {
+    color: #005b99;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  
+  #content p {
+    line-height: 1.7em;
+    margin-bottom: 20px;
+  }
+  
+  /* 專案展示 */
+  #port {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #port li {
+    border: 4px solid #cce0ff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150px;
+    transition: 0.3s;
+  }
+  
+  #port li:hover {
+    border-color: #005b99;
+  }
+  
+  /* 側邊欄 */
+  #sidebar {
+    flex: 1;
+    background: #f2f8ff;
+    padding: 30px;
+    border-left: 2px solid #d0e4ff;
+  }
+  
+  #sidebar h2 {
+    color: #005b99;
+    font-size: 1.4em;
+    border-bottom: 2px solid #cce0ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #link-list li {
+    margin-bottom: 10px;
+  }
+  
+  #link-list a {
+    color: #005b99;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  #link-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 頁尾 */
+  #footer {
+    background: #e6f0ff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #555;
+    border-top: 2px solid #cce0ff;
+  }
+  
+  /* 響應式 */
+  @media (max-width: 768px) {
+    #mainContent {
+      flex-direction: column;
+    }
+  
+    #content, #sidebar {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    #nav li {
+      margin: 5px 0;
+    }
+  }
+  

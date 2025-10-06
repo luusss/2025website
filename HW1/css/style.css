@@ -10,19 +10,29 @@ a little easier
 */
 body {
 	margin: 0 auto;
-	width: 800px;
+	width: 1000px;
 	padding: 0;
-	/* background: #6e0427 url('../images/body_bg.gif') repeat-x top; */
-	background-image: linear-gradient(to bottom, #681304b0, rgba(49, 2, 2,0.5));
+	background-image: linear-gradient(to bottom, #0072FF, rgba(49, 2, 2,0.5));
 	font-family: Helvetica, sans-serif;
 	font-size: 62.5%;
 	color: #333;
 }
 
-h1, h2, p, ul, li {
-	margin: 0;
-	padding: 0;
+#header {
+	
+	color: #fff;
+	text-align: left;
+	padding: 20px 0;
+  }
+#header h1 {
+  margin: 0 0 5px 20px;
 }
+#header h2 {
+  margin: 0 0 0 10px;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+  
 
 p {
 	font-size: 1.4em;
@@ -62,7 +72,7 @@ span.amp {
 }
 
 #nav {
-	float: right;
+	float: Center;
 	margin: 50px 10px 0 0;
 	font-size: 1.4em;
 }
@@ -74,10 +84,17 @@ span.amp {
 }
 
 #nav li a {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none;
 	background: none;
 }
+
+#nav ul {
+	list-style: none;
+	padding: 25px 0;
+	background: #1f919e; /* 或改成更淡的顏色 */
+	border-radius: 5px;   /* 圓角 */
+  }
 
 /*
 Because the header content is outside the wrap <div>,
@@ -88,9 +105,10 @@ the layout
 	clear: both;
 	margin: 0 auto;
 	padding: 10px;
-	width: 800px;
+	width: 1000px;
+	height: 1000px;
 	background: #fff;
-	border: 10px solid #5c0505;
+	border: 10px solid #7ac5f4;
 }
 
 #header img {
@@ -101,7 +119,7 @@ the layout
 	font-size: 2em;
 	margin: 10px 0 0 0;
 	padding: 10px;
-	text-align: center;
+	text-align: left;
 	background: url('../images/tagline_bg.gif') repeat-x;
 }
 
@@ -131,6 +149,11 @@ the layout
 
 #link-list li {
 	margin: 0 0 10px 0;
+}
+
+#sideba {
+	float: left;
+	background: #eee;
 }
 
 #sidebar {
