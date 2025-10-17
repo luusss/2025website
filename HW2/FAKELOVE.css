@@ -6,8 +6,8 @@
   }
   body {
     background-image: url("BGP.png");
+    background-size: 1200px 800px;
   }
-  
   /* 頂部 LOGO 區 */
   .top-header {
     margin: 0 0 0 175px;
