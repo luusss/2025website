@@ -1,180 +1,214 @@
-/* Reset & Base */ 
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-image: url("BGP.png");
-    background-size:  1640px ;
-  }
-  /* 頂部 LOGO 區 */
-  .top-header {
-    margin: 0 0 0 175px;
-    text-align: left;
-    color: white;
-    padding: 20px 40px;
-    /*background: #0073c6;*/
-  }
-  .top-header h1 {
-    font-size: 26px;
-    margin-bottom: 5px;
-  }
-  .top-header p {
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
-  
-  /* 白框主內容 */
-  .wrapper {
-    max-width: 1100px;
-    margin: 0 auto 40px auto;
-    background: #fff;
-    border: 10px solid #cce9ff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Header */
-  header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #000;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
+  background: #111;
+  overflow: hidden;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.eagle-logo {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  text-align: center;
+}
+
+.eagle-logo img {
+  width: 140px;
+}
+
+.eagle-logo h1 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.eagle-logo h1 span {
+  display: block;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* ===== Navigation ===== */
+.nav-left, .nav-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.nav-left {
+  left: 5%;
+  margin: 0 0 5px 20px;
+}
+
+.nav-right {
+  right: 5%;
+}
+
+.nav-left ul, .nav-right ul {
+  list-style: none;
+}
+
+.nav-left li, .nav-right li {
+  margin: 0.5rem 0;
+}
+
+.nav-left a, .nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  color: #f0c040;
+}
+
+/* ===== Main Content ===== */
+.content {
+  background: #1a1a1a;
+  padding: 3rem 1rem;
+}
+
+.medals-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.medals-section h2 {
+  font-size: 2rem;
+  color: #f0c040;
+}
+
+.medals-section .subtitle {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.medals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ribbons {
+  flex: 1 1 300px;
+}
+
+.ribbon-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+}
+
+.ribbon-row img {
+  width: 80px;
+  height: 20px;
+  background-color: #333;
+  border: 1px solid #555;
+}
+
+.medal-info {
+  flex: 1 1 300px;
+  text-align: left;
+  background: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.info-box {
+  background: #333;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.medal-preview img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logos img {
+  width: 100px;
+  opacity: 0.8;
+}
+
+.footer p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-left, .nav-right {
+    position: static;
     text-align: center;
+    transform: none;
   }
-  .banner {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Navigation */
-  nav {
-    background: linear-gradient(#00b4ff, #008bd1);
-  }
-  nav ul {
-    list-style: none;
+
+  .nav-left ul, .nav-right ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-  }
-  nav li {
-    margin: 0;
-  }
-  nav a {
-    display: block;
-    padding: 12px 25px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    background: #0073c6;
-  }
-  
-  /* Top Boxes */
-  .top-boxes {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .medals-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medal-info {
     text-align: center;
-    padding: 30px 15px;
-    background: #f9fcff;
   }
-  .top-boxes .box {
-    flex: 1 1 250px;
-    margin: 10px;
-  }
-  .top-boxes img {
-    width: 60px;
-    margin: 10px 0;
-  }
-  .top-boxes h2 {
-    color: #00a0e3;
-    margin-bottom: 8px;
-  }
-  
-  /* Content */
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-  }
-  .left {
-    flex: 2;
-    min-width: 300px;
-  }
-  .right {
-    flex: 1;
-    min-width: 280px;
-  }
-  .section {
-    background: #f7f9fc;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #d9ecff;
-    border-radius: 8px;
-  }
-  .section.blue {
-    background: #e7f6ff;
-  }
-  .section h3 {
-    color: #00a0e3;
-    margin-bottom: 12px;
-  }
-  .section a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #00a0e3;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .section a:hover {
-    text-decoration: underline;
-  }
-  .section ul {
-    list-style: none;
-  }
-  .section ul li::before {
-    content: "• ";
-    color: #00a0e3;
-  }
-  
-  /* Profiles */
-  .profiles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
-  }
-  .profiles img {
-    width: 100%;
-    border-radius: 6px;
-  }
-  
-  /* Footer */
-  footer {
-    background: linear-gradient(#00b4ff, #0073c6);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 13px;
-  }
-  footer a {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-    }
-    .top-boxes {
-      flex-direction: column;
-      text-align: center;
-    }
-    .content {
-      flex-direction: column;
-    }
-    .top-header {
-      text-align: center;
-    }
-  }
-  
+}
