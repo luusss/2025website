@@ -1,0 +1,306 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #000;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
+  background: #111;
+  overflow: hidden;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.eagle-logo {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  text-align: center;
+}
+
+.eagle-logo img {
+  width: 140px;
+}
+
+.eagle-logo h1 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.eagle-logo h1 span {
+  display: block;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* ===== Navigation ===== */
+.nav-left, .nav-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.nav-left {
+  left: 5%;
+  /*margin: 0 0 5px 20px;*/
+}
+
+.nav-right {
+  right: 5%;
+}
+
+.nav-left ul, .nav-right ul {
+  list-style: none;
+}
+
+.nav-left li, .nav-right li {
+  margin: 0.5rem 0;
+}
+
+.nav-left a, .nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  color: #f0c040;
+}
+
+.nav-left a, .nav-right a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.nav-left a {
+  transform: skewX(-10deg);
+}
+.nav-right a {
+  transform: skewX(10deg);
+}
+
+/* === 指定移動特定項目 === */
+
+/* nav-left 中的第 2 個項目（Join Up）往左移 2 格 */
+.nav-left ul li:nth-child(2) {
+  margin-left: 2em; /* 或 -20px，看你想移動多少 */
+}
+
+/* nav-right 中的第 2 個項目（Medals）往左移 2 格 */
+.nav-right ul li:nth-child(2) {
+  margin-left: -2em; /* 同樣可改成 -20px */
+}
+
+.nav-left ul li:nth-child(3) {
+  margin-left: 45px; 
+}
+
+.nav-right ul li:nth-child(3) {
+  margin-left: -4em;
+}
+
+.nav-left ul li:nth-child(4) {
+  margin-left: 65px; 
+}
+
+.nav-right ul li:nth-child(4) {
+  margin-left: -6em;
+}
+
+.nav-left ul li:nth-child(5) {
+  margin-left: 105px; 
+}
+
+.nav-right ul li:nth-child(5) {
+  margin-left: -10em;
+}
+
+/* ===== Main Content ===== */
+.content {
+  background: #1a1a1a;
+  padding: 3rem 1rem;
+}
+
+.medals-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.medals-section h2 {
+  font-size: 2rem;
+  color: #f0c040;
+}
+
+.medals-section .subtitle {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.medals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ribbons {
+  flex: 1 1 300px;
+}
+
+.ribbon-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+}
+
+.ribbon-row img {
+  width: 80px;
+  height: 20px;
+  background-color: #333;
+  border: 1px solid #555;
+}
+
+.medal-info {
+  flex: 1 1 300px;
+  text-align: left;
+  background: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.info-box {
+  background: #333;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.medal-preview img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logos img {
+  width: 100px;
+  opacity: 0.8;
+}
+
+.footer p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/*box-right*/
+
+.box-right ul {
+  list-style: none;    /* 移除白點 */
+  padding-left: 0;
+  margin: 0;
+}
+
+.box-right li {
+  margin-bottom: 10px; /* 每個按鈕間距 */
+}
+
+.box-right a {
+  display: flex;                /* 用 flex 讓文字置中 */
+  justify-content: center;      /* 水平置中 */
+  align-items: center;          /* 垂直置中 */
+  width: 500px;                 /* 統一寬度（可自行調整） */
+  height: 100px;                 /* 統一高度（可自行調整） */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: 0.3s;
+  box-sizing: border-box;       /* 避免邊框影響大小 */
+}
+
+.box-right a:hover {
+  color: #f0c040;
+}
+
+
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-left, .nav-right {
+    position: static;
+    text-align: center;
+    transform: none;
+  }
+
+  .nav-left ul, .nav-right ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .medals-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medal-info {
+    text-align: center;
+  }
+}
