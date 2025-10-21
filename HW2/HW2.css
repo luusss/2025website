@@ -92,6 +92,55 @@ body {
   color: #f0c040;
 }
 
+.nav-left a, .nav-right a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* === 指定移動特定項目 === */
+
+/* nav-left 中的第 2 個項目（Join Up）往左移 2 格 */
+.nav-left ul li:nth-child(2) {
+  margin-left: 2em; /* 或 -20px，看你想移動多少 */
+}
+
+/* nav-right 中的第 2 個項目（Medals）往左移 2 格 */
+.nav-right ul li:nth-child(2) {
+  margin-left: -2em; /* 同樣可改成 -20px */
+}
+
+.nav-left ul li:nth-child(3) {
+  margin-left: 45px; 
+}
+
+.nav-right ul li:nth-child(3) {
+  margin-left: -4em;
+}
+
+.nav-left ul li:nth-child(4) {
+  margin-left: 65px; 
+}
+
+.nav-right ul li:nth-child(4) {
+  margin-left: -6em;
+}
+
+.nav-left ul li:nth-child(5) {
+  margin-left: 105px; 
+}
+
+.nav-right ul li:nth-child(5) {
+  margin-left: -10em;
+}
+
 /* ===== Main Content ===== */
 .content {
   background: #1a1a1a;
