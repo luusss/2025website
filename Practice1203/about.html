@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <header>
+          <img id="bg" src="bg.jpg" alt="" srcset="" />
+          <h2 id ="title">Mountains</h2>
+          <img id="man" src="man.png" alt="" srcset=""  />
+          <img src="clouds_1.png" alt="" srcset="" />
+          <img src="clouds_2.png" alt="" srcset="" />
+          <img id="left" src="mountain_left.png" alt="" srcset=""  />
+          <img id="right" src="mountain_right.png" alt="" srcset=""  />
+   </header> 
+</body>
+<script>
+    gsap.to("#bg", {scale:2 ,duration:3});
+    gsap.to("#man", {scale:0.5, duration:3});
+    gsap.to("#left", {x:200 ,duration:3});
+    gsap.to("#right", {x:-200 ,duration:3});
+</script>
+</html>
